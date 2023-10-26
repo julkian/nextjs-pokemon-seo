@@ -1,4 +1,4 @@
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 import Image from 'next/image';
 
 type PokemonResponse = {
@@ -35,6 +35,7 @@ export async function generateMetadata(
             images: pokemon.sprites.front_default,
             type: 'website',
             url: `http://localhost:3000/pokemon/${params.pokemonName}`,
+            siteName: 'https://pokeseo.com',
         },
     }
   }
