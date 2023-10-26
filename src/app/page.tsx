@@ -6,6 +6,12 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Home | PokeSEO',
   description: 'Welcome to PokeSEO, click on image to see the list of pokemons',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'de-DE': '/de-DE',
+    },
+  }
 }
 
 export default function Home() {

@@ -17,6 +17,12 @@ type PokemonListResponse = {
 export const metadata: Metadata = {
     title: 'Pokemon list',
     description: 'List of the first 151 pokemons ordered by their number',
+    alternates: {
+        canonical: '/pokemon',
+        languages: {
+          'de-DE': '/de-DE/pokemon',
+        },
+    }
   }
   
 export default async function PokemonList() {

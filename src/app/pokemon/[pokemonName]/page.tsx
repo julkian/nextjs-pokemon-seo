@@ -27,6 +27,9 @@ export async function generateMetadata(
         // title: {
         //     absolute: `Pokemon #${pokemon.id} ${pokemonName}`,
         // },
+        alternates: {
+            canonical: `/pokemon/${params.pokemonName}`,
+        },
         openGraph: {
             title: `Check my awesome ${pokemonName}!`,
             images: pokemon.sprites.front_default,
