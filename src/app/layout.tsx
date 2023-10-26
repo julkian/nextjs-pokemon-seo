@@ -7,6 +7,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  // metadataBase: new URL('https://pokeseo.com'),
   title: {
     template: '%s | PokeSEO',
     default: 'PokeSEO',
