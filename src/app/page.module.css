@@ -1,0 +1,8 @@
+.center {
+  display: flex;
+  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+}
