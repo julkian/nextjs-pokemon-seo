@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         languages: {
           'de-DE': '/de-DE/pokemon',
         },
-    },
+    }
   }
   
 export default async function PokemonList() {

@@ -11,18 +11,7 @@ export const metadata: Metadata = {
     languages: {
       'de-DE': '/de-DE',
     },
-  },
-  robots: {
-      index: false,
-      follow: true,
-      nocache: true,
-      googleBot: {
-          index: true,
-          follow: false,
-          noimageindex: true,
-          'max-image-preview': 'large',
-      },
-  },
+  }
 }
 
 export default function Home() {

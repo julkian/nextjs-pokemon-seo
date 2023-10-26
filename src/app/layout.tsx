@@ -12,17 +12,6 @@ export const metadata: Metadata = {
     template: '%s | PokeSEO',
     default: 'PokeSEO',
   },
-  // robots: {
-  //     index: false,
-  //     follow: true,
-  //     nocache: true,
-  //     googleBot: {
-  //         index: true,
-  //         follow: false,
-  //         noimageindex: true,
-  //         'max-image-preview': 'large',
-  //     },
-  // },
 }
 
 export default function RootLayout({
