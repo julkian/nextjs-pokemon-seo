@@ -1,12 +1,34 @@
+import { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 
 type PokemonResponse = {
+    id: number;
     name: string;
     sprites: {
         front_default: string;
     };
-
 }
+
+type RouteProps = {
+    params: { pokemonName: string };
+}
+
+export async function generateMetadata(
+    { params }: RouteProps,
+  ): Promise<Metadata> {
+    const pokemonName = params.pokemonName
+   
+    const pokemon: PokemonResponse = await (
+        await fetch(`https://pokeapi.co/api/v2/pokemon/${params.pokemonName}`)
+    ).json();
+   
+    return {
+        title: `Pokemon #${pokemon.id} ${pokemonName}`,
+        // title: {
+        //     absolute: `Pokemon #${pokemon.id} ${pokemonName}`,
+        // },
+    }
+  }
 
 export default async function PokemonList({ params }: { params: { pokemonName: string } }) {
     const pokemon: PokemonResponse = await (

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css'
+import { Metadata } from 'next';
 
 type Pokemon = {
     name: string;
@@ -12,6 +13,11 @@ type PokemonListResponse = {
     previous: string;
     results: Pokemon[];
 }
+
+export const metadata: Metadata = {
+    title: 'Pokemon list',
+    description: 'List of the first 151 pokemons ordered by their number',
+  }
   
 export default async function PokemonList() {
     const pokemonList: PokemonListResponse = await (
