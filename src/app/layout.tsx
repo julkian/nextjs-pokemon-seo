@@ -7,11 +7,22 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  // metadataBase: new URL('https://pokeseo.com'),
+  metadataBase: new URL('https://pokeseo.com'),
   title: {
     template: '%s | PokeSEO',
     default: 'PokeSEO',
   },
+  // robots: {
+  //   index: false,
+  //   follow: true,
+  //   nocache: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: false,
+  //     noimageindex: true,
+  //     'max-image-preview': 'large',
+  //   },
+  // },
 }
 
 export default function RootLayout({
