@@ -32,7 +32,14 @@ export async function generateMetadata(
         },
         openGraph: {
             title: `Check my awesome ${pokemonName}!`,
-            images: pokemon.sprites.front_default,
+            images: [
+                {
+                    url: pokemon.sprites.front_default,
+                    width: 192,
+                    height: 192,
+                    alt: `Pokemon ${pokemonName}`,
+                },
+            ],
             type: 'website',
             url: `http://localhost:3000/pokemon/${params.pokemonName}`,
             siteName: 'https://pokeseo.com',
