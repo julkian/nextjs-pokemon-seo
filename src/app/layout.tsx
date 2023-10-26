@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   //     'max-image-preview': 'large',
   //   },
   // },
+  manifest: 'https://pokeseo.com/manifest.json',
 }
 
 export default function RootLayout({
