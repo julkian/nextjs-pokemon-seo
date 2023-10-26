@@ -27,6 +27,12 @@ export async function generateMetadata(
         // title: {
         //     absolute: `Pokemon #${pokemon.id} ${pokemonName}`,
         // },
+        openGraph: {
+            title: `Check my awesome ${pokemonName}!`,
+            images: pokemon.sprites.front_default,
+            type: 'website',
+            url: `http://localhost:3000/pokemon/${params.pokemonName}`,
+        },
     }
   }
 
