@@ -1,16 +1,15 @@
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--header-footer-height);
+}
+
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100%;
-  }
-  
-  .header, .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin:auto;
     width: 100%;
-    height: var(--header-footer-height);
-  }
+    max-height: 100%;
+    max-width: 1280px;
+    min-height: calc(100vh - var(--header-footer-height)*2);
+}

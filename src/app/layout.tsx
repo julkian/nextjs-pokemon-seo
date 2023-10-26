@@ -18,15 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <header className={styles.header}>
+          This looks like a header
+        </header>
         <main className={styles.main}>
-          <header className={styles.header}>
-            This looks like a header
-          </header>
             {children}
-          <footer className={styles.footer}>
-            This looks like a footer
-          </footer>
         </main>
+        <footer className={styles.footer}>
+          This looks like a footer
+        </footer>
       </body>
     </html>
   )
