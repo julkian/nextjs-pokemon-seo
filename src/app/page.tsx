@@ -23,6 +23,15 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
     },
   },
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/shortcut-icon.png',
+    apple: '/apple-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
+    },
+  },
 }
 
 export default function Home() {
